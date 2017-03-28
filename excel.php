@@ -212,9 +212,9 @@ class XmlExport extends ExcelExport {
 
         $line = '<Row>';
         foreach ($row as $cell) {
-            $line .= '<Cell><Data ss:Type="String">'.$cell.'</Data></Cell>';
+            $line .= '<Cell><Data ss:Type="String">'.$cell."</Data></Cell>\n";
         }
-        $line .= '</Row>';
+        $line .= "</Row>\n";
         $this->datas .= $line;
     }
 
